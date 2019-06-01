@@ -198,19 +198,21 @@ h6 {
     padding-top: 20px;
     border-top: black dashed 1px;
 }
-article .middleContent{
+div .middleContent{
     width: 350px;
     height: 250px;
     margin: 20px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-} /*this was accidental, although, I don't want to fix it because I think it looks nice this way. I used 'inspect' in chrome and was able to figure out why the heading wasn't sitting nicely together at the screen top*/
+    align-content: stretch;
+}/*I realized that visually the items didn't line up to the lines of the page so I attempted to fix that with justify content*/
 
 button {
+    border-radius: 10px;
     border: 2px solid black;
     height: 40px;
     width: 125px;
     background: snow;
     font-family: "Baskerville Old Face";
-} /*the sharp edge rectangle looks nicer with this, I don't want to mess with it.*/
+} /*I found the border radius property, I first tried 15px but that didn't appear to match the design spec so I said 10px*/
