@@ -118,34 +118,34 @@ p {
 }
 /*after a failed attempt to refactor this and color each box individually, I broke the code and it would not appear correctly on the screen, I had to go back to the last save, copy and paste the code back here and start all over. I'm not able to complete the coloring of these boxes*/
 
-.boxes:nth-child(1){
+.middle-content div:nth-child(1){
     background: teal;
 }
-.boxes:nth-child(2){
-    background: gold;
-}
-.boxes:nth-child(3){
+.middle-content div:nth-child(2){
+    background: snow;
+} /*for the nth-child(2) the whole background renders as gold, if we color it white, the whole background renders as white*/
+.middle-content div:nth-child(3){
     background: cadetblue;
 }
-.boxes:nth-child(4){
+.middle-content div:nth-child(4){
     background: coral;
 }
-.boxes:nth-child(5){
+.middle-content div:nth-child(5){
     background: crimson;
 }
-.boxes:nth-child(6){
+.middle-content div:nth-child(6){
     background: forestgreen;
 }
-.boxes:nth-child(7){
+.middle-content div:nth-child(7){
     background: darkorchid;
 }
-.boxes:nth-child(8){
+.middle-content div:nth-child(8){
     background: hotpink;
 }
-.boxes:nth-child(9){
+.middle-content div:nth-child(9){
     background: indigo;
 }
-.boxes:nth-child(10){
+.middle-content div:nth-child(10){
     background: dodgerblue;
 }
 /*attempting to color each box individually using pseudo-class, going back up to the original styling I left background color blank, so, at that point it rendered as white space, we will see with the pseudo classes and overriding the blank background. At first I attempted to write out the number for each child but that was an unknown selector, then I tried nth child and the number associated with each box. Still no color but at least the boxes aren't broken but now they're all yellow*/
