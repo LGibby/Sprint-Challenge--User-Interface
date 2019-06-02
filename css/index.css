@@ -12,65 +12,76 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
+.logo{
+    display: inline-block;
+    }
+.highway{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+header {
+    width: 70%;
+    display: inline-block;
+}
+header nav a {
+    color: dimgray;
+    font-size: 16px;
+    margin: 15px;
+    padding: 15px;
+}
 p {
     line-height: 1.4;
 }
-
 .container {
     width: 800px;
     margin: 0 auto;
 }
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -78,69 +89,130 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
-
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/*after a failed attempt to refactor this and color each box individually, I broke the code and it would not appear correctly on the screen, I had to go back to the last save, copy and paste the code back here and start all over. I'm not able to complete the coloring of these boxes*/
+
+.middle-content div:nth-child(1){
+    background: teal;
+}
+.middle-content div:nth-child(2){
+    background: snow;
+} /*for the nth-child(2) the whole background renders as gold, if we color it white, the whole background renders as white*/
+.middle-content div:nth-child(3){
+    background: cadetblue;
+}
+.middle-content div:nth-child(4){
+    background: coral;
+}
+.middle-content div:nth-child(5){
+    background: crimson;
+}
+.middle-content div:nth-child(6){
+    background: forestgreen;
+}
+.middle-content div:nth-child(7){
+    background: darkorchid;
+}
+.middle-content div:nth-child(8){
+    background: hotpink;
+}
+.middle-content div:nth-child(9){
+    background: indigo;
+}
+.middle-content div:nth-child(10){
+    background: dodgerblue;
+}
+/*attempting to color each box individually using pseudo-class, going back up to the original styling I left background color blank, so, at that point it rendered as white space, we will see with the pseudo classes and overriding the blank background. At first I attempted to write out the number for each child but that was an unknown selector, then I tried nth child and the number associated with each box. Still no color but at least the boxes aren't broken but now they're all yellow*/
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 16px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
 }
+.aboutPage{
+    font-family: "Baskerville Old Face";
+}
+.jumbo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h6 {
+    font-size: 1.5em;
+    font-family: "Baskerville Old Face";
+}
+.topContent{
+    margin: 10px;
+    padding-bottom: 20px;
+    border-bottom: black dashed 1px;
+}
+.bottomContent{
+    margin: 10px;
+    padding-top: 20px;
+    border-top: black dashed 1px;
+}
+div .middleContent{
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}/*I realized that visually the items didn't line up to the lines of the page so I attempted to fix that with justify content*/
+
+button {
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 40px;
+    width: 125px;
+    background: snow;
+    font-family: "Baskerville Old Face";
+} /*I found the border radius property, I first tried 15px but that didn't appear to match the design spec so I said 10px*/
