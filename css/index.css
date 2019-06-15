@@ -58,22 +58,26 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-.logo{
-    display: inline-block;
-    }
 .highway{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 3% 0;
 }
 header {
-    width: 70%;
-    display: inline-block;
+    width: 100%;
+    display: flex;
+}
+.logo{
+    margin: 0 3% 0 0;
+}
+header nav {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 header nav a {
     color: dimgray;
     font-size: 16px;
-    margin: 15px;
-    padding: 15px;
 }
 p {
     line-height: 1.4;
@@ -121,8 +125,8 @@ p {
 .middle-content div:nth-child(1){
     background: teal;
 }
-.middle-content div:nth-child(2){
-    background: snow;
+.boxes div:nth-child(2){
+    background: gold;
 } /*for the nth-child(2) the whole background renders as gold, if we color it white, the whole background renders as white*/
 .middle-content div:nth-child(3){
     background: cadetblue;
@@ -181,33 +185,37 @@ footer nav a {
     font-family: "Baskerville Old Face";
 }
 .jumbo{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 3% 0 0 0;
 }
 h6 {
     font-size: 1.5em;
     font-family: "Baskerville Old Face";
 }
 .topContent{
-    margin: 10px;
-    padding-bottom: 20px;
+    margin: 3% 0;
+    padding: 3%;
     border-bottom: black dashed 1px;
+}
+.middleContent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pictures{
+    width: 47%;
+    flex-direction: row;
+}
+.content{
+    width: 47%;
+    flex-direction: row;
+    margin: 3% 0;
 }
 .bottomContent{
     margin: 10px;
     padding-top: 20px;
     border-top: black dashed 1px;
 }
-div .middleContent{
-    width: 350px;
-    height: 250px;
-    margin: 20px;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-}/*I realized that visually the items didn't line up to the lines of the page so I attempted to fix that with justify content*/
-
 button {
     border-radius: 10px;
     border: 2px solid black;
