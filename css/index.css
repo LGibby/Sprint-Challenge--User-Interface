@@ -205,6 +205,7 @@ h6 {
 .content{
     width: 47%;
     flex-direction: row;
+    margin: 3% 0;
 }
 .bottomContent{
     margin: 10px;
