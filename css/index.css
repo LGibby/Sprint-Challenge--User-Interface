@@ -121,7 +121,6 @@ p {
     align-items: center;
     justify-content: center;
 }
-/*after a failed attempt to refactor this and color each box individually, I broke the code and it would not appear correctly on the screen, I had to go back to the last save, copy and paste the code back here and start all over. I'm not able to complete the coloring of these boxes*/
 
 .middle-content div:nth-child(1){
     background: teal;
@@ -157,15 +156,13 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 2%;
     justify-content: space-around;
 }
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding: 0 2%;
 }
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
+
 footer {
     width: 100%;
     background: black;
@@ -184,7 +181,7 @@ footer nav a {
 }
 .aboutPage{
     font-family: "Baskerville Old Face";
-}
+}/**/
 .jumbo{
     margin: 3% 0 0 0;
 }
